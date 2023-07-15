@@ -45,9 +45,9 @@ class ConvMHSA_Model:
 
         embed_input = Input(shape=(x_train.shape[1],x_train.shape[2]))
         x = MultiHeadSelfAttention_Model(embed_dim, num_heads)(embed_input)
-        x1 = Conv1D(filters=2,kernel_size=3,padding='VALID', strides = 1, activation='relu',name='conv2')(x)
-        x2 = Conv1D(filters=2,kernel_size=6,padding='VALID', strides = 1, activation='relu',name='conv3')(x)
-        x3 = Conv1D(filters=2,kernel_size=9,padding='VALID', strides = 1, activation='relu',name='conv4')(x)
+        x1 = Conv1D(filters=2,kernel_size=2,padding='VALID', strides = 1, activation='relu',name='conv2')(x)
+        x2 = Conv1D(filters=2,kernel_size=3,padding='VALID', strides = 1, activation='relu',name='conv3')(x)
+        x3 = Conv1D(filters=2,kernel_size=4,padding='VALID', strides = 1, activation='relu',name='conv4')(x)
         cnn1 = GlobalMaxPooling1D()(x1)
         cnn2 = GlobalMaxPooling1D()(x2)
         cnn3 = GlobalMaxPooling1D()(x3)
