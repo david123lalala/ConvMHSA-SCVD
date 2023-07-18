@@ -17,8 +17,8 @@ reentrancy_DD_path='data/extract_reentrancy_function_single/'
 reentrancy_DDCD_path='data/extract_function_reentrancy/'
 reentrancy_none_path='data/reentrancy_source_code_pkl/'
 
-file_reentrancy_name_path='data/re_final_reentrancy_number.txt'
-file_reentrancy_value_path='data/re_final_reentrancy_oyente_result.txt'
+file_reentrancy_name_path='data/re_final_reentrancy_name.txt'
+file_reentrancy_value_path='data/re_final_reentrancy_label.txt'
 
 for arg in vars(args):
     print(arg, getattr(args, arg))
