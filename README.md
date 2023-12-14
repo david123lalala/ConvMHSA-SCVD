@@ -1,4 +1,4 @@
-# ConvMHSA-SCVD(ISSRE 2023)
+# ConvMHSA-SCVD (ISSRE 2023)
 
 Code and datasets for ConvMHSA-SCVD: Enhancing Smart Contract Vulnerability Detection through a Knowledge-Driven and Data-Driven Framework
 
